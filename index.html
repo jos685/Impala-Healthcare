@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impala Healthcare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* ... (Rest of the CSS styles) ... */
+        
+        header {
+            background: #e2e8f0;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #e2e8f0;
+            padding: 10px 0 10px;
+            height: 10%;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2b6cb0;
+            font-weight:bold;
+            font-size:0.8em;
+        }
+        nav a:hover {
+            color: #1a202c;
+        }
+        .details{
+            color:#2b6cb0;
+        }
+       
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('bp.jpeg') no-repeat right center;
+            background-size: cover;
+            color: blue;
+            height: 300px;
+        }
+
+        .hero img{
+            transition: transform o.3s;
+        }
+        .hero img:hover{
+            transform: scale(1.05)
+        }
+        .unique-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #edf2f7;
+        }
+        .unique-section img {
+            width: 45%;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .unique-section img:hover{
+            transform:scale(1.05);
+            background-color: blue;
+        
+        }
+        .unique-section p {
+            color:#2b6cb0;
+            width: 45%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background: white;
+        }
+        .service {
+            background: #edf2f7;
+            border-radius: 15px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            background-color: #2b6cb0;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2b6cb0;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 96%;
+        }
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border-radius: 15px;
+            margin: 15px;
+            width: 420px;
+            text-align: center; 
+            padding-left: 10%;
+            text-align: center;
+            background-color:#2b6cb0;
+            border-radius:5px;
+           
+        }
+        .contact {
+            padding: 20px;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e0;
+            border-radius: 5px;
+        }
+        .cta-button{
+            background: #2b6cb0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background: #1a202c;
+        }
+        .contact button {
+            background: #2b6cb0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #1a202c;
+        }
+        .booking {
+            text-align: center;
+            padding: 20px;
+            background: #edf2f7;
+        }
+        .booking a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #2b6cb0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .booking a:hover {
+            background: #1a202c;
+        }
+         @media screen and (max-width: 768px) {
+            /* Media query for mobile responsiveness */
+            .hero {
+                height: auto; /* Remove fixed height for better responsiveness */
+            }
+            .services {
+                flex-direction: column; /* Stack services vertically on mobile */
+            }
+            .service {
+                width: 100%; /* Make services full-width on mobile */
+            }
+           
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo2.jpeg" alt="Impala Healthcare Logo">
+        
+         
+        <nav>
+            <a href="#services">SERVICES</a>
+            <a href="#about">ABOUT_US</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <a href="#book-now"  class="cta-button">Book Now</a>
+    </header>
+
+   <div class="details">
+    <center>
+   <h2>Welcome to <span style="color: black; font-size: 0.8em;">IMPALA HOMECARE</span> <br> your health is our priority</h2>
+</center>
+   </div>
+    
+
+    <div class="hero">
+        <img src="bp.jpeg" alt="Healthcare image"> 
+        
+    </div>
+
+    <div class="unique-section">
+        <img src="gg.jpeg" alt="Healthcare Professional">
+        <p>We provide <span style="color: black;"> tailored home healthcare solutions </span>that meet your specific needs.</p>
+    </div>
+
+    <div class="unique-section">
+        <p>Our team is dedicated to ensuring <span style="color: black;"> quality and compassionate care </span> for all our clients.</p>
+        <img src="gal.jpeg" alt="Family Healthcare Support">
+    </div>
+
+    <div class="unique-section">
+        <img src="trial.jpeg" alt="Healthcare Professional">
+        <p>We ensure that we are with you at every step of your treatment journey as <span style="color:black;"> your Health is our Priority.</span></p>
+    </div>
+
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Home Nursing</h3>
+            <p>Comprehensive nursing care services provided by licensed professionals.</p>
+        </div>
+        <div class="service">
+            <h3>Physiotherapy</h3>
+            <p>Personalized physiotherapy sessions to support recovery and mobility.</p>
+        </div>
+        <div class="service">
+            <h3>Medication Management</h3>
+            <p>Ensuring timely medication and monitoring for your loved ones.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>ABOUT US</h2>
+        <p>Impala Healthcare is committed to providing high-quality, affordable home-based healthcare services. Our team of certified professionals ensures your well-being in the comfort of your home.</p>
+
+        <div class="mission">
+            <h2>MISSION AND VISION</h2>
+            <p>Impala Healthcare is committed to providing high-quality, affordable home-based healthcare services. Our team of certified professionals ensures your well-being in the comfort of your home.</p>
+        </div>
+
+        <div class="testimonials">
+            <h2>WHAT OUR PATIENTS SAY</h2>
+            <p>"The home nursing care was exceptional. The nurse was very compassionate and professional."</p> 
+            <p>"Physiotherapy sessions helped me regain my mobility after surgery. Highly recommend!"</p> 
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>CONTACT US</h2>
+        <p>We'd love to hear from you! Reach out to us with any inquiries or to book our services.</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Impala Healthcare. All rights reserved.</p>
+        <p>Phone: 555-123-4567 | Email: info@impalahc.com</p> 
+    </footer>
+</body>
+</html>
